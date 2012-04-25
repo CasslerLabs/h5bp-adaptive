@@ -1,0 +1,118 @@
+// GLOBAL VARIABLES AND CALLBACKS FOR FUNSIES, ENJOY THE RIDE KIDS
+
+	// Configuration
+		$font-size: 15; // Your base font-size in pixels
+		$em: $font-size; // Shorthand for outputting ems
+		$line: $em*1.6; // shorthand for lineheight
+		$column: 50; // The column-width of your grid in pixels
+		$gutter: 20; // The gutter-width of your grid in pixels
+	// Colors
+		$green:			#290;
+		$mist:			#d6e1c7;
+		$bird:			#94c7b6;
+		$dark:			#403b33;
+		$red:			#d3643b;
+		$green:			#a4b357;
+
+	// Font Stacks
+		$sans:			"proxima-nova", "ff-meta-web-pro", Arial, sans-serif;
+		$serif: 		"lemonde-courrier", Georgia, Times, serif;
+
+	// Column-widths in a function, in ems
+		@mixin width($cols:1) {
+			width: #{($cols * ($column + $gutter) - $gutter) / $em}em;
+			display:inline-block;
+		}
+		@mixin pad($cols:1) {
+			width: #{($cols * ($column + $gutter) - $gutter) / $em}em;
+			padding:#{(0.5* $gutter) / $em}em;
+			display:inline-block;
+		}
+		@mixin margin($cols:1) {
+			width: #{($cols * ($column + $gutter) - $gutter) / $em}em;
+			margin:#{(0.5* $gutter) / $em}em;
+			display:inline-block;
+		}
+		@mixin contain($cols:1) {
+			max-width: #{($cols * ($column + $gutter)) / $em}em;
+		}
+
+body {
+	font: #{$font-size * 1px}/#{$line *1px} $sans;
+	margin:0;padding:0;
+	text-align:center;
+}
+
+div[role="main"] {padding:1em;}
+
+// header * /
+	header[role="navigation"] {
+		margin:0;
+		text-align:center;
+		padding:1em auto;
+
+		nav {
+			@include contain(16);
+			text-align:left;
+			margin:auto;
+			padding:1em;
+			position:relative;
+
+			h1 {font-size:2em;}
+			h1 img {height:1.5em;width:auto;margin-left:0.3em;}
+
+			ul {
+				display:inline-block;
+				position:absolute;
+				right:1em;
+				top:2em;
+				list-style:none;
+
+				li {
+					display:inline;
+					padding:0 1em;
+				}
+
+				li:first-child {
+					border:0;
+				}
+			}
+		}
+	}
+
+
+
+// zoom zoom */r
+	@media screen and (max-width: 1024px) {
+		body {font-size: #{($font-size - 1)/16}em;}  
+	}
+
+	@media screen and (max-width: 770px) {
+		body {font-size: #{($font-size - 2)/16}em;}
+	}
+
+	@media screen and (max-width: 660px) {}
+
+	@media screen and (max-width: 560px) {
+		header {
+			position:relative;
+			padding-bottom:2em;
+			hash
+			nav {
+				padding:0;
+			
+				h1 {display:block;text-align:center;}
+			
+				ul {
+					position:relative;
+					display:block;
+					margin:2.5em -1em 0 0;
+					padding:0;
+					width:100%;
+					text-align:center;
+				
+					li:first-child {display:none;}
+				}
+			}
+		}	
+	}
