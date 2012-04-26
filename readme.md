@@ -1,13 +1,12 @@
-# [HTML5 Boilerplate](http://html5boilerplate.com)
 
-HTML5 Boilerplate is a professional front-end template that helps you build fast, robust, adaptable, and future-proof websites. Spend more time developing and less time reinventing the wheel.
+# Cassler Labs Adaptive Starting Position
 
-This project is the product of many years of iterative development and combined community knowledge. It does not impose a specific development philosophy or framework, so you're free to architect your code in the way that you want.
+CLASP is a fork of the wildly popular [HTML5 Boilerplate](http://html5boilerplate.com) project. HTML5 Boilerplate is a professional front-end template that helps you build fast, robust, adaptable, and future-proof websites. Spend more time developing and less time reinventing the wheel.
 
 
 ## Quick start
 
-Clone the git repo - `git clone git://github.com/h5bp/html5-boilerplate.git` - or [download it](https://github.com/h5bp/html5-boilerplate/zipball/master)
+Clone the git repo - `git clone git://github.com/CasslerLabs/html5-adaptive.git` - or [download it](https://github.com/CasslerLabs/html5-adaptive/zipball/master)
 
 
 ## Features
@@ -28,10 +27,11 @@ Clone the git repo - `git clone git://github.com/h5bp/html5-boilerplate.git` - o
 * "Delete-key friendly." Easy to strip out parts you don't need.
 * Extensive inline and accompanying documentation.
 
+## CLASP Extended Features 
 
-## Contributing
-
-Anyone and everyone is welcome to [contribute](https://github.com/h5bp/html5-boilerplate/wiki/contribute). Hundreds of developers have helped make the HTML5 Boilerplate what it is today.
+* SASS based CSS with a pre-built adaptive grid.
+* Sensible media queries to hit many devices.
+* CDN ready assets, all static files are stored in a single, flat folder.
 
 
 ## Project information
